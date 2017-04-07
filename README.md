@@ -1,28 +1,67 @@
-# TestAppHelloWorld
+Angular 2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-## Development server
+Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+@angular/common - commonly needed directives and services.
+@angular/form - data binding and validation of input controls (When we want to use the form in the specific page that component we can defined specifically)
+@angular/core - Here you get all the core module for the app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+#Creating Angular 1.x app to Angular 2
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+#Project Dependency
 
-## Running unit tests
+Nodejs Installed, if already installed skip that
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+Following steps before that: 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+1> Run nom install @angular-cli
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+2> Add @ngModule where we initialise and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
+
+3> Since ng takes care all the web pack by default and serve. But still you can customise the web pack in between. To do so just type ng-eject, this will create a webpack configuration file and now you can edit that file. But now two run the app ng serve is not going to work . As the package.json is updated . Here you need to run nom start which actually calls ng serve —port <definedportNumber>
+
+4> Now if we use sublime we can install typescript package along with John papa ng2 which gives you all the hint and syntax error for better code standard and free from misspelt. These typescript package check also runtime error so that easy to code.
+
+
+5> Now if we want to css to the app we can do by using cli
+
+Using Sass with Angular2 using angular-cli
+
+1> npm install node-sass --save-dev 
+ 
+To set the default css syntax follow these:
+
+1> ng set defaults.styleExt scss
+
+Now update in angular-cli.json,  update as
+
+
+"defaults": {
+     "styleExt": "scss",
+}
+
+
+      "styles": [
+        "styles.scss"
+      ],
+
+#Angular Material2 Usage
+Now,  npm install --save @angular/material
+
+
+To inject the module import it in the module ts file
+
+Say in the file name as app.module.ts
+
+import { MaterialModule } from '@angular/material'
+
+As material module is the core module of the app, we use at the main module using forRoot function keyword
+
+Note in the angular 2 material2 md-button or md-menu-item cannot be used a component , you need to use the directive. For example to use md-button we need to add
+
+<button md-button>Material 1 Button</button>
