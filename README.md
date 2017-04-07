@@ -5,9 +5,12 @@ Unlike in angular1.x all the module loaded in the single library and we can’t 
 
 
 @angular/common - commonly needed directives and services.
+
 @angular/form - data binding and validation of input controls (When we want to use the form in the specific page that component we can defined specifically)
+
 @angular/core - Here you get all the core module for the app
 
+@angular/platform-browser/animations - As an alternate of ng-animate for navigation and other sliding page transition.
 
 #Creating Angular 1.x app to Angular 2
 
@@ -28,7 +31,7 @@ Following steps before that:
 4> Now if we use sublime we can install typescript package along with John papa ng2 which gives you all the hint and syntax error for better code standard and free from misspelt. These typescript package check also runtime error so that easy to code.
 
 
-5> Now if we want to css to the app we can do by using cli
+5> Now if we want to add scss to the app we can do by using cli
 
 Using Sass with Angular2 using angular-cli
 
@@ -49,6 +52,14 @@ Now update in angular-cli.json,  update as
       "styles": [
         "styles.scss"
       ],
+
+Now add scss into your component using styleUrls: ['demo.scss'] as example. And angular-cli calls the webpack configuration which will compile the scss request to css 
+
+In angular-cli we can test unit testing as well as end to end testing by checking the package.json and run the npm test and npm e2e respectively.
+
+And since webpack minifies bundle the html js font css and everything so we no need to do any gulp or any thirdparty module for optimization
+
+
 
 #Angular Material2 Usage
 Now,  npm install --save @angular/material
