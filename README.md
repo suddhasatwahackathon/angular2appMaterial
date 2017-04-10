@@ -1,4 +1,4 @@
-# Angular 2
+# Angular 2.0
 
 
 Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand.
