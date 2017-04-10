@@ -1,8 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular2-procurement",
-    "ejected": true
+    "name": "angular2-procurement"
   },
   "apps": [
     {
@@ -20,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "./app/app.theme.scss"
       ],
       "scripts": [
       ],
