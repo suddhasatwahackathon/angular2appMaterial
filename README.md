@@ -22,23 +22,23 @@ Nodejs Installed, if already installed skip that
 ## Following steps before that: 
 
 
-1> Run nom install @angular-cli
+* Run nom install @angular-cli
 
-2> Add @ngModule where we initialise and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
-
-
-3> Now if we use sublime we can install typescript package along with John papa ng2 which gives you all the hint and syntax error for better code standard and free from misspelt. These typescript package check also runtime error so that easy to code.
+* Add @ngModule where we initialise and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
 
 
-4> Now if we want to add scss to the app we can do by using cli
+* Now if we use sublime we can install typescript package along with John papa ng2 which gives you all the hint and syntax error for better code standard and free from misspelt. These typescript package check also runtime error so that easy to code.
+
+
+* Now if we want to add scss to the app we can do by using cli
 
 Using Sass with Angular2 using angular-cli
 
-1> npm install node-sass --save-dev 
++ npm install node-sass --save-dev 
  
-To set the default css syntax follow these:
+* To set the default css syntax follow these:
 
-1> ng set defaults.styleExt scss
++ ng set defaults.styleExt scss
 
 Now update in angular-cli.json,  update as
 
