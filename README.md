@@ -26,7 +26,7 @@ Following steps before that:
 
 2> Add @ngModule where we initialise and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
 
-3> Since ng takes care all the web pack by default and serve. But still you can customise the web pack in between. To do so just type ng-eject, this will create a webpack configuration file and now you can edit that file. But now two run the app ng serve is not going to work . As the package.json is updated . Here you need to run nom start which actually calls ng serve —port <definedportNumber>
+3> Since ng takes care all the web pack by default and serve. But still you can customise the web pack in between. To do so just type ng-eject, this will create a webpack configuration file and now you can edit that file. But now two run the app ng serve is not going to work . As the package.json is updated . Here you need to run nom start which actually calls ng serve —port <portNumber>
 
 4> Now if we use sublime we can install typescript package along with John papa ng2 which gives you all the hint and syntax error for better code standard and free from misspelt. These typescript package check also runtime error so that easy to code.
 
