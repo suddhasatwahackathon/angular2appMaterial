@@ -1,4 +1,4 @@
-### Angular 2
+# Angular 2
 
 
 Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand.
@@ -62,7 +62,7 @@ To run the app , we need to type
 ng serve
 
 
-# 1.0 Please Note
+### 1.0 Please Note
 
  Here in angular-cli uses webpack with npm package.json. And since webpack works with npm for minifies bundle the html js font css and everything so we no need to do any gulp or any thirdparty module for optimization.
 
