@@ -21,7 +21,7 @@ Nodejs Installed, if already installed skip that
 ### Following steps before that: 
 
 
-* Run nom install @angular-cli
+* Run npm install @angular-cli
 
 * Add @ngModule where we initialise and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
 
