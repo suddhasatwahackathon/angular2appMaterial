@@ -4,13 +4,13 @@
 Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand.
 
 
-#### @angular/common - commonly needed directives and services.
+###### @angular/common - commonly needed directives and services.
 
-#### @angular/form - data binding and validation of input controls (When we want to use the form in the specific page that component we can defined specifically)
+###### @angular/form - data binding and validation of input controls (When we want to use the form in the specific page that component we can defined specifically)
 
-#### @angular/core - Here you get all the core module for the app
+###### @angular/core - Here you get all the core module for the app
 
-#### @angular/platform-browser/animations - As an alternate of ng-animate for navigation and other sliding page transition.
+###### @angular/platform-browser/animations - As an alternate of ng-animate for navigation and other sliding page transition.
 
 ## Creating Angular 1.x app to Angular 2
 
