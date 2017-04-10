@@ -13,8 +13,6 @@ Unlike in angular1.x all the module loaded in the single library and we can’t 
 ###### @angular/platform-browser/animations - As an alternate of ng-animate for navigation and other sliding page transition.
 
 
-## Creating Angular 1.x app to Angular 2
-
 ### Project Dependency
 
 Nodejs Installed, if already installed skip that
