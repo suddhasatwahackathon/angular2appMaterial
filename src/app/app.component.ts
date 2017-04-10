@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core';
 import { TooltipPosition } from '@angular/material'
+import {UIROUTER_DIRECTIVES} from "ui-router-ng2";
 
 @Component({
 	moduleId: module.id,

@@ -1,7 +1,24 @@
 # Angular 2.0
 
+### Project Dependency
 
-Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand.
+Nodejs Installed, if already installed skip that
+
+### Installation
+
+* npm install
+
+* npm install @angular-cli - g (We are using angular-cli tool so need to install globally, if you have these tool installed already in global skip that)
+
+### Running the Application
+
+To run the app , we need to type 
+
+ng serve --open
+
+### Hierarchy use in Angular 2.0 structure: 
+
+Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand. As example below
 
 
 ###### @angular/common - commonly needed directives and services.
@@ -13,17 +30,9 @@ Unlike in angular1.x all the module loaded in the single library and we can’t 
 ###### @angular/platform-browser/animations - As an alternate of ng-animate for navigation and other sliding page transition.
 
 
-### Project Dependency
+### Structure in Angular 2.0
 
-Nodejs Installed, if already installed skip that
-
-
-### Following steps before that: 
-
-
-* Run npm install @angular-cli
-
-* Add @ngModule where we initialise and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
+* Addition of @ngModule in the new edition where we initialize and import all the component and declare directive and importing http module routing module and if we use material then need to import material module in the root stage using .forRoot(). 
 
 
 * Now if we use sublime we can install typescript package along with John papa ng2 which gives you all the hint and syntax error for better code standard and free from misspelt. These typescript package check also runtime error so that easy to code.
@@ -50,15 +59,6 @@ Now update in angular-cli.json,  update as
 Now add scss into your component using styleUrls: ['demo.scss'] as example. And angular-cli calls the webpack configuration which will compile the scss request to css 
 
 In angular-cli we can test unit testing as well as end to end testing by checking the package.json and run the npm test and npm e2e respectively.
-
-
-
-
-### Running the Application
-
-To run the app , we need to type 
-
-ng serve
 
 
 ## 1.0 Please Note
