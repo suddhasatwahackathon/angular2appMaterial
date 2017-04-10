@@ -1,4 +1,4 @@
-Angular 2
+### Angular 2
 
 
 Unlike in angular1.x all the module loaded in the single library and we can’t isolate that one and for which the size is more. But In angular2 we can use the particular angular module on demand.
@@ -14,12 +14,12 @@ Unlike in angular1.x all the module loaded in the single library and we can’t 
 
 #Creating Angular 1.x app to Angular 2
 
-#Project Dependency
+## Project Dependency
 
 Nodejs Installed, if already installed skip that
 
 
-Following steps before that: 
+## Following steps before that: 
 
 
 1> Run nom install @angular-cli
@@ -55,14 +55,14 @@ In angular-cli we can test unit testing as well as end to end testing by checkin
 
 
 
-#Running the Application
+## Running the Application
 
 To run the app , we need to type 
 
 ng serve
 
 
-#1.0 Please Note
+# 1.0 Please Note
 
  Here in angular-cli uses webpack with npm package.json. And since webpack works with npm for minifies bundle the html js font css and everything so we no need to do any gulp or any thirdparty module for optimization.
 
@@ -73,7 +73,7 @@ ng serve
  But since we are using angular-cli project we will not use the command ng-eject. 
  In order to make any changes in the web pack configuration we use the modification in angular-cli.json , and these angular-cli.json called by the command ng-serve and in between all the properties in angular-cli calling the web pack dev server and bundle minify and optimize everything there.
 
-#Angular Material2 Usage
+## Angular Material2 Usage
 Now,  npm install --save @angular/material
 
 
@@ -89,7 +89,7 @@ Note in the angular 2 material2 md-button or md-menu-item cannot be used a compo
 
 <button md-button>Material 1 Button</button>
 
-#Create a custom theme scss for the application
+## Create a custom theme scss for the application
 
 Create a custom theme file and save it into the application folder say in our file location (./src/app/app.theme.scss). And now we need to bind these web pack config. To do so we need to update the angular-cli.json . Just open the anular-cli.json and find:
 
