@@ -12,6 +12,7 @@ Unlike in angular1.x all the module loaded in the single library and we can’t 
 
 ###### @angular/platform-browser/animations - As an alternate of ng-animate for navigation and other sliding page transition.
 
+
 ## Creating Angular 1.x app to Angular 2
 
 ### Project Dependency
@@ -104,5 +105,5 @@ So if we want to update the button primary pre build color we can do so . These 
 
 
 
-
+[logo]: https://www.ag-grid.com/images/angular2.png
 
