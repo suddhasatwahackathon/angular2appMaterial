@@ -10,7 +10,7 @@ export class sideNavComponent implements OnInit {
 	constructor() {}
 	navItems = [
 	  {name: 'Assinged To Task', href: 'task'},
-	  {name: 'Assigned To Group', href: 'task'},
+	  {name: 'Assigned To Group', href: 'group'},
 	  {name: 'Director', href: 'director'},
 	];
 	ngOnInit() {

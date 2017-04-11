@@ -15,8 +15,11 @@ import { AppComponent } from './app.component';
 import { sideNavComponent } from './sideNav/sideNav.component';
 import { TaskComponent } from './task/task.component';
 import { DirectorComponent } from './director/director.component';
+import { DirectorListComponent, DirectorListNestedComponent } from './director/directorlist.component';
 
-let INITIAL_COMPONENTS =  [ AppComponent, sideNavComponent, TaskComponent, DirectorComponent ];
+import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
+
+let INITIAL_COMPONENTS =  [ AppComponent, sideNavComponent, TaskComponent, DirectorComponent, DirectorListComponent, DirectorListNestedComponent, PageNotFoundComponent ];
 
 
 @NgModule({

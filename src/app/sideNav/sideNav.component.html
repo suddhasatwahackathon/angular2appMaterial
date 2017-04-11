@@ -3,7 +3,7 @@
     <md-sidenav #start  class="sidenav-wrapper">
       <md-nav-list>
         <a *ngFor="let navItem of navItems"
-        md-list-item class="proc-list-item" routerLink="/{{navItem.href}}" 
+        md-list-item class="proc-list-item" routerLink="/{{navItem.href}}" routerLinkActive="active"
         (click)="start.close()"
         >
         {{navItem.name}}
@@ -28,8 +28,7 @@
       <span>Angular2.0 Material Design Procurement</span>
     </div>
   </md-toolbar>
-
-  <div #root="$implicit" dir="ltr" class="demo-content">
+<div #root="$implicit" dir="ltr" class="outer-outlet">
     <router-outlet></router-outlet>
   </div>
 </div>

@@ -6,6 +6,10 @@
 		 &:hover {
         background: #88B04B;
     }
+    &.active{
+      background: #88B04B;
+    }
+
 	}
 }
 body {
@@ -63,9 +67,5 @@ body {
 }
 
 
-.proc-list-item{
-  &:nth-child(1){
-    background: #88B04B;
-  }
-}
+
 
