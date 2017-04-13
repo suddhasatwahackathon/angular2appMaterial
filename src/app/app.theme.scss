@@ -21,6 +21,8 @@ $dark-warn:    mat-palette($mat-deep-orange);
 // that you are using.
 @include angular-material-theme($dark-theme);
 
-md-toolbar-row{
-	background:#3E50B4;
+.mat-toolbar{
+	&.mat-primary{
+		background:#3E50B4;
+	}
 }

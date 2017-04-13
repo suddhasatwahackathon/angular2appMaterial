@@ -3,69 +3,51 @@
   margin-top: 65px;
 	a{
 		color: #FFFFFF;
+    padding: 16px 0px;
 		 &:hover {
         background: #88B04B;
     }
     &.active{
       background: #88B04B;
     }
-
 	}
-}
-body {
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-
-  // Helps fonts on OSX looks more consistent with other systems
-  // Isn't currently in button styles due to performance concerns
-  * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .mat-sidenav {
-    min-width: 15vw;
-
-    .mat-button {
-      width: 100%;
-      position: relative;
-      bottom: 0;
-      margin: 24px 0;
-    }
-  }
-
-  .demo-content {
-    padding: 32px;
-    box-sizing: border-box;
-  }
-
-  .mat-toolbar {
-    .mat-icon {
-      cursor: pointer;
-    }
-
-    .demo-toolbar {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
-
-  h1 {
-    font-size: 20px;
-  }
+  .md-nav-list{
+    padding:0px ;
+  }  
 }
 
-// stretch to screen size in fullscreen mode
-.demo-content {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
 
 .mat-sidenav-backdrop{
   visibility: hidden !important;
 }
 
+.sidenav-icon{
+
+  text-align: center;
+}
+
+.icon-employee{
+  &:before {
+    content: "\e036";
+  }
+}
+
+.icon-family-care{
+  &:before {
+    content: "\e064";
+  }
+}
+
+.icon-home{
+  &:before {
+    content: "\e070";
+  }
+}
+.nav-list-wrapper{
+  .mat-list-item-content{
+    height:100% !important;
+  }
+}
 
 
 

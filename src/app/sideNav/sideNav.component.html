@@ -2,36 +2,29 @@
   <div>
     <md-sidenav #start  class="sidenav-wrapper">
       <md-nav-list>
-        <a *ngFor="let navItem of navItems"
-        md-list-item class="proc-list-item" routerLink="/{{navItem.href}}" routerLinkActive="active"
-        (click)="start.close()"
-        >
-        {{navItem.name}}
-      </a>
+        <div class="nav-list-wrapper">
+         <a *ngFor="let navItem of navItems"
+         md-list-item class="proc-list-item" [ngClass]="['sidenav-icon', 'al-icon', navItem.icon]" routerLink="/{{navItem.href}}" routerLinkActive="active"
+         (click)="start.close()"
+         ></a>         
+       </div>
 
-      <hr>
-
-      <a md-list-item
-      (click)="start.close()"
-      >
-      Baseline
-    </a>
-  </md-nav-list>
-  <button md-button (click)="start.close()">CLOSE</button>
-</md-sidenav>  
-<div>
-  <md-toolbar color="primary">
-    <button md-icon-button (click)="start.open()">
-      <md-icon class="md-24" >Click</md-icon>
-    </button>
-    <div class="demo-toolbar">
-      <span>Angular2.0 Material Design Procurement</span>
+     </md-nav-list>
+     <button md-button (click)="start.close()">CLOSE</button>
+   </md-sidenav>  
+   <div>
+    <md-toolbar color="primary">
+      <button md-icon-button (click)="start.open()">
+          <img class="logo" src= "./assets/img/logo.png">
+      </button>
+      <div class="demo-toolbar">
+        <span>Angular2.0 Material Design Procurement</span>
+      </div>
+    </md-toolbar>
+    <div #root="$implicit" dir="ltr" class="outer-outlet">
+      <router-outlet></router-outlet>
     </div>
-  </md-toolbar>
-<div #root="$implicit" dir="ltr" class="outer-outlet">
-    <router-outlet></router-outlet>
   </div>
-</div>
 </div>
 </md-sidenav-container>
 

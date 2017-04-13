@@ -1,4 +1,32 @@
 @import '../assets/_vars';
 @import './sideNav/sideNav.component';
 @import './director/director.component';
+@font-face {
+ font-family: 'SAP-icons';
+ src: url('../assets/fonts/SAP-icons.ttf'), url('../assets/fonts/SAP-icons.woff'),
+     url('../assets/fonts/SAP-icons.eot');/* IE9+ */
+ font-weight: normal;
+ font-style: normal;
+}
 
+/* Use the following SCSS code if you want to have a class per icon */
+[class^="icon-"],
+[class*=" icon-"] {
+	&:before{
+	  font-family: 'SAP-icons';
+	  font-style: normal;
+	  speak: none;		
+	}
+}
+body{
+	font-family: ArialMT;
+	font-size: 14px;
+	font-weight: 500;	
+}
+.logo{
+	width:54px;
+}
+.al-icon{
+  display: inline-block;
+  font-size: 24px;
+}

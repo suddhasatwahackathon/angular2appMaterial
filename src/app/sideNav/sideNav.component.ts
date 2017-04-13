@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class sideNavComponent implements OnInit {
 	constructor() {}
 	navItems = [
-	  {name: 'Assinged To Task', href: 'task'},
-	  {name: 'Assigned To Group', href: 'group'},
-	  {name: 'Director', href: 'director'},
+	  {name: 'Assinged To Task', href: 'task', icon:'icon-employee'},
+	  {name: 'Assigned To Group', href: 'group', icon:'icon-family-care'},
+	  {name: 'Director', href: 'director', icon:'icon-home'},
 	];
 	ngOnInit() {
 		
